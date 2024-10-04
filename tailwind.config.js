@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{html,js,jsx,ts,tsx}", // Adjust this path according to your project structure
+    "./public/index.html", // If you have an index.html in the public directory
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        shantell: ['"ShantellSans"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
