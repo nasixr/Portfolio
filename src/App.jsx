@@ -1,6 +1,8 @@
 import NavBar from "./Components/NavBar";
+import About from "./Containers/About";
 import Expertise from "./Containers/Expertise";
 import Home from "./Containers/Home";
+import Portfolio from "./Containers/Portfolio";
 
 export default function App() {
   return (
@@ -8,6 +10,8 @@ export default function App() {
       <NavBar/>
       <Home />
       <Expertise/>
+      <About/>
+      <Portfolio/>
     </div>
   )
 }

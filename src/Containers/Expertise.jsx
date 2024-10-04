@@ -7,7 +7,7 @@ export default function Expertise() {
         My Expertise
       </h1>
 
-      <div className={"flex justify-between"}>
+      <div className={"flex justify-around"}>
         <ExpertiseCard
           img={"/public/CardImages/Strategy & Direction.png"}
           Title={"Strategy & Direction"}
