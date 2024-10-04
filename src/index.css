@@ -3,97 +3,315 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-Regular.ttf") format("truetype");
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-Italic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-Light.ttf")
+    format("truetype");
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-LightItalic.ttf")
+    format("truetype");
+  font-weight: 300; /* Light weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-Medium.ttf")
+    format("truetype");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-MediumItalic.ttf")
+    format("truetype");
+  font-weight: 500; /* Medium weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600; /* Semi-bold weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600; /* Semi-bold weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800; /* Extra-bold weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ShantellSans";
+  src: url("../public/static/ShantellSans/ShantellSans-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800; /* Extra-bold weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Playfair_Display Font-Faces */
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-Italic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800; /* Extra-bold weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800; /* Extra-bold weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600; /* Semi-bold weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600; /* Semi-bold weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-Medium.ttf")
+    format("truetype");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-MediumItalic.ttf")
+    format("truetype");
+  font-weight: 500; /* Medium weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-Black.ttf")
+    format("truetype");
+  font-weight: 900; /* Black weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../public/static/Playfair_Display/PlayfairDisplay-BlackItalic.ttf")
+    format("truetype");
+  font-weight: 900; /* Black weight */
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Roboto Font-Faces */
+@font-face {
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-Bold.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-Italic.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Italic.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-BoldItalic.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-BoldItalic.ttf") format("truetype");
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-Light.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Light.ttf") format("truetype");
     font-weight: 300; /* Light weight */
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-LightItalic.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-LightItalic.ttf") format("truetype");
     font-weight: 300; /* Light weight */
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-Medium.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Medium.ttf") format("truetype");
     font-weight: 500; /* Medium weight */
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-MediumItalic.ttf") format("truetype");
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-MediumItalic.ttf") format("truetype");
     font-weight: 500; /* Medium weight */
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-SemiBold.ttf") format("truetype");
-    font-weight: 600; /* Semi-bold weight */
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Black.ttf") format("truetype");
+    font-weight: 900; /* Black weight */
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-SemiBoldItalic.ttf") format("truetype");
-    font-weight: 600; /* Semi-bold weight */
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+    font-weight: 900; /* Black weight */
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-ExtraBold.ttf") format("truetype");
-    font-weight: 800; /* Extra-bold weight */
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-Thin.ttf") format("truetype");
+    font-weight: 100; /* Thin weight */
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ShantellSans";
-    src: url("../public/static/ShantellSans-ExtraBoldItalic.ttf") format("truetype");
-    font-weight: 800; /* Extra-bold weight */
+    font-family: "Roboto";
+    src: url("../public/static/Roboto/Roboto-ThinItalic.ttf") format("truetype");
+    font-weight: 100; /* Thin weight */
     font-style: italic;
     font-display: swap;
 }

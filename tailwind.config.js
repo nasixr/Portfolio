@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         shantell: ['"ShantellSans"', "sans-serif"],
+        playfair: ['"PlayfairDisplay"', "serif"],
+        roboto: ['"Roboto"', "sans-serif"],
       },
     },
   },
