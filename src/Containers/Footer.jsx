@@ -10,8 +10,8 @@ export default function Footer() {
       <img src="/public/WhiteLogo.png" alt="" className={"h-8 sm:h-14"} />
 
       <div className="flex flex-col justify-center sm:hidden ">
-        <a href={"/"}>Home</a>
-        <a href={"/"}>About me</a>
+        <a href={"#home"}>Home</a>
+        <a href={"#aboutme"}>About me</a>
         <a href={"/"}>Contact</a>
       </div>
 
@@ -20,16 +20,34 @@ export default function Footer() {
         <a href={"/"}>Resume</a>
       </div>
       <div className="hidden sm:flex w-full justify-around">
-        <a href={"/"}>Home</a>
-        <a href={"/"}>About me</a>
+        <a href={"#home"}>Home</a>
+        <a href={"#aboutme"}>About me</a>
         <a href={"/"}>Contact</a>
         <a href={"/"}>Portfolio</a>
         <a href={"/"}>Resume</a>
       </div>
       <div className={"flex justify-between w-1/5"}>
-        <FaTwitter color="white"  className={"mr-3 h-[24px] sm:h-[3.75rem] w-[24px] sm:w-[2.75rem]"} />
-        <FaLinkedin color="white"  className={"mr-3 h-[24px] sm:h-[3.75rem] w-[24px] sm:w-[2.75rem]"} />
-        <FaInstagram color="white"  className={"h-[24px] sm:h-[3.75rem] w-[24px] sm:w-[2.75rem]"}/>
+        <FaTwitter
+          color="white"
+          className="mr-3 h-[24px] sm:h-[3.75rem] w-[24px] sm:w-[2.75rem] cursor-pointer"
+          onClick={() =>
+            (window.location.href = "http://twitter.com/nasixrA")
+          }
+        />
+        <FaLinkedin
+          color="white"
+          className={"mr-3 h-[24px] sm:h-[3.75rem] w-[24px] sm:w-[2.75rem] cursor-pointer"}
+          onClick={() =>
+            (window.location.href = "https://www.linkedin.com/in/nasixr/")
+          }
+        />
+        <FaInstagram
+          color="white"
+          className={"h-[24px] sm:h-[3.75rem] w-[24px] sm:w-[2.75rem] cursor-pointer"}
+          onClick={() =>
+            (window.location.href = "http://instagram.com/nasixr")
+          }
+        />
       </div>
     </div>
   );

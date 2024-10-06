@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className={"mt-24 py-32 px-14 flex items-center justify-around"}>
+    <div id="aboutme" className={"mt-24 py-32 px-14 flex items-center justify-around"}>
         <img src="/public/AboutImage.png" alt="" className={" sm:h-[43.75rem] h-52 sm:mr-0 mr-6 self-start"}/>
 
         <div>

@@ -6,6 +6,7 @@ import Expertise from "./Containers/Expertise";
 import Home from "./Containers/Home";
 import Portfolio from "./Containers/Portfolio";
 import Footer from "./Containers/Footer";
+import Contact from "./Containers/Contact";
 
 export default function App() {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false); // Correct state declaration
@@ -18,6 +19,7 @@ export default function App() {
       <Expertise />
       <About/>
       {/* <Portfolio/> */}
+      <Contact/>
       <Footer/>
     </div>
   );

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-      <div className={"px-[20%] w-full mx-auto bg-[#4591FE0D] sm:my-16 my-12"}>
+      <div id="home" className={"px-[20%] w-full mx-auto bg-[#4591FE0D] sm:my-16 my-12"}>
 
       <h1 className="sm:text-3xl text-[0.5rem] -translate-x-11">👋, my name is Nasser and I am a freelance</h1>
       <img className={""} src="/public/UI.png" alt="" />
