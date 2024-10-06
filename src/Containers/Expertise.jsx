@@ -3,11 +3,11 @@ import ExpertiseCard from "../Components/ExpertiseCard";
 export default function Expertise() {
   return (
     <div className="mx-20 mb-7">
-      <h1 className={"text-[#282938] font-semibold text-[4rem] font-playfair mb-24"}>
+      <h1 className={"text-[#282938] font-semibold text-2xl sm:text-[4rem] font-playfair sm:mb-24 mb-6 -translate-x-14 sm:translate-x-0"}>
         My Expertise
       </h1>
 
-      <div className={"flex justify-around"}>
+      <div className={"flex justify-around flex-col sm:flex-row items-center gap-y-9 sm:gap-y-0"}>
         <ExpertiseCard
           img={"/public/CardImages/Strategy & Direction.png"}
           Title={"Strategy & Direction"}

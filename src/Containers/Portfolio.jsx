@@ -6,7 +6,7 @@ export default function Portfolio() {
       <p className={"text-xl font-medium"}>Recent Projects</p>
       <h1 className={"text-[4rem] font-semibold mb-20"}>My Portfolio</h1>
 
-      <div className="flex justify-around">
+      <div className="flex justify-around flex-col sm:flex-row">
         <PortFolioCard
           img={"/public/PortfolioImages/PortfolioImageMubeen.png"}
           Title={"Ahuse"}
