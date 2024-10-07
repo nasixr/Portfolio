@@ -1,5 +1,5 @@
-import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import Swal from "sweetalert2";
 import * as Yup from "yup";
 
 export default function Contact() {
@@ -21,8 +21,18 @@ export default function Contact() {
     "https://discord.com/api/webhooks/1292542314182479934/uQR-kXtzRD9FzZq40Vl_GmKyIdhz_qDkxQ_BKnEYVRQNVEBiHf7A0PIsSemOwXsXt3GK";
 
   return (
-    <div id="contact" className="flex justify-center items-center min-h-screen p-4">
+    <div
+      id="contact"
+      className="flex justify-center items-center min-h-screen p-4"
+    >
       <div className="w-full max-w-3xl">
+        <h1
+          className={
+            "mx-auto w-fit font-bold font-playfair text-2xl sm:text-[4rem] mb-6 sm:mb-28"
+          }
+        >
+          Contact Me
+        </h1>
         <Formik
           initialValues={{
             firstName: "",
@@ -70,14 +80,23 @@ export default function Contact() {
             })
               .then((response) => {
                 if (response.ok) {
-                  alert("Message sent successfully!");
+                  Swal.fire({
+                    title: "Message sent successfully!",
+                    icon: "success",
+                  });
                 } else {
-                  alert("Failed to send message. Please try again.");
+                  Swal.fire({
+                    title: "Failed to send message. Please try again.",
+                    icon: "error",
+                  });
                 }
               })
               .catch((error) => {
                 console.error("Error:", error);
-                alert("An error occurred. Please try again.");
+                Swal.fire({
+                  title: "An error occurred. Please try again.",
+                  icon: "error",
+                });
               })
               .finally(() => {
                 setSubmitting(false);

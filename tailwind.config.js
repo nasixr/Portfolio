@@ -11,6 +11,9 @@ export default {
         playfair: ['"PlayfairDisplay"', "serif"],
         roboto: ['"Roboto"', "sans-serif"],
       },
+      boxShadow: {
+        'Skills': '1px 1px 79px 0px rgba(105, 2, 180, 0.54)',
+      },
     },
   },
   plugins: [],
