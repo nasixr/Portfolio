@@ -21,7 +21,7 @@ export default function Contact() {
     "https://discord.com/api/webhooks/1292542314182479934/uQR-kXtzRD9FzZq40Vl_GmKyIdhz_qDkxQ_BKnEYVRQNVEBiHf7A0PIsSemOwXsXt3GK";
 
   return (
-    <div className="flex justify-center items-center min-h-screen p-4">
+    <div id="contact" className="flex justify-center items-center min-h-screen p-4">
       <div className="w-full max-w-3xl">
         <Formik
           initialValues={{

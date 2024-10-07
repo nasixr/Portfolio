@@ -2,7 +2,7 @@ import PortFolioCard from "../Components/PortFolioCard";
 
 export default function Portfolio() {
   return (
-    <div className={"text-[#282938] font-playfair py-28 px-16"}>
+    <div id="Portfolio" className={"text-[#282938] font-playfair py-28 px-16"}>
       <p className={"text-xl font-medium"}>Recent Projects</p>
       <h1 className={"text-[4rem] font-semibold mb-20"}>My Portfolio</h1>
 
